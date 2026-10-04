@@ -3,6 +3,7 @@ import { SummaryCards } from "@/features/dashboard/components/SummaryCards";
 import { CashFlowCard } from "@/features/dashboard/components/CashFlowCard";
 import { BudgetCard } from "@/features/dashboard/components/BudgetCard";
 import { RecentTransactions } from "@/features/dashboard/components/RecentTransactions";
+import { UpcomingBills } from "@/features/dashboard/components/UpcomingBills";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
           <BudgetCard />
         </div>
 
-        <RecentTransactions />
+        <div className="dashboard-home__bottom">
+          <RecentTransactions />
+          <UpcomingBills />
+        </div>
       </div>
     </AppShell>
   );
